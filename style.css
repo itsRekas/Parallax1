@@ -1,94 +1,115 @@
-@import url('https://fonts.googleapis.com/css?family=Poppinss:300,400,500,600,700,800,900&display=swap');
+/* Importing Google Fonts 'Poppins' with various font weights */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Poppins', sans-serif;
+/* Global style reset to remove default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Setting global font to 'Poppins' */
 }
-/* Webkit scrollbar styling */
+
+/* Styling for the scrollbar in Webkit browsers (e.g., Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 0.5vw; /* Scrollbar width */
-    border-radius: 0.5px; /* Rounded corners */
+    width: 0.5vw; /* Width of the scrollbar */
+    border-radius: 0.5px; /* Rounded corners for the scrollbar */
 }
 
-/* Webkit scrollbar track styling */
+/* Styling for the scrollbar track */
 ::-webkit-scrollbar-track {
-    background: rgba(15, 13, 31, 0.715); /* Track background color */
+    background: rgba(15, 13, 31, 0.715); /* Dark background color with transparency */
 }
 
-/* Webkit scrollbar thumb styling */
+/* Styling for the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-    background: rgba(5, 5, 114, 0.76); /* Thumb background color */
+    background: rgba(5, 5, 114, 0.76); /* Dark blue background color with transparency */
 }
 
-/* Webkit scrollbar thumb hover effect */
+/* Styling for the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(1, 1, 84); /* Hover background color */
+    background: rgb(1, 1, 84); /* Darker blue background color when hovered */
 }
-body{
-    background: #010635fa;
-    min-height:1500px;
+
+/* Body styling */
+body {
+    background: #010635fa; /* Dark blue background color */
+    min-height: 1500px; /* Minimum height to ensure scrollbar visibility */
 }
-section{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-    display:flex;
-    justify-content: center;
-    align-items:center;
+
+/* Styling for the main section */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
-section:before{
-    content:'';
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:100px;
-    background:linear-gradient(to top, #010635db, transparent);
-    z-index:10;
+
+/* Gradient overlay at the bottom of the section */
+section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Height of the gradient */
+    background: linear-gradient(to top, #010635db, transparent); /* Gradient from dark blue to transparent */
+    z-index: 10; /* Ensure it appears above background images */
 }
-section:after{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#010635db;
-    z-index:10;
-    mix-blend-mode: color;
+
+/* Overlay for color blending */
+section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #010635db; /* Semi-transparent dark blue background */
+    z-index: 10; /* Ensure it appears above background images */
+    mix-blend-mode: color; /* Blend mode to mix colors */
 }
-section img{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    pointer-events:none;
+
+/* Styling for all images within the section */
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    pointer-events: none; /* Prevent images from interfering with mouse events */
 }
-#text{
-    position:relative;
-    color:#fff;
-    font-size:10em;
-    z-index:1;
+
+/* Styling for the text within the section */
+#text {
+    position: relative;
+    color: #fff; /* White text color */
+    font-size: 10em; /* Large font size */
+    z-index: 1; /* Ensure it appears above background images */
 }
-#road{
-    z-index:2;
+
+/* Ensuring the road image has a higher z-index */
+#road {
+    z-index: 2; /* Higher stacking order for the road image */
 }
-.info{
-    color:white;
-    width:40vw;
-    height:60vh;
-    left:30vw;
-    top:30vh;
-    position:relative;
-    font-size: larger;
-    background: #040c577b;
-    border-radius: 3vw;
+
+/* Styling for the information div */
+.info {
+    color: white; /* White text color */
+    width: 40vw; /* 40% of viewport width */
+    height: 60vh; /* 60% of viewport height */
+    left: 30vw; /* Center horizontally */
+    top: 30vh; /* Center vertically */
+    position: relative;
+    font-size: larger; /* Larger font size */
+    background: #040c577b; /* Semi-transparent dark blue background */
+    border-radius: 3vw; /* Rounded corners */
 }
-.info p{
-    position:relative;
-    top:5vh;
-    padding:2vw;
+
+/* Styling for paragraphs within the info div */
+.info p {
+    position: relative;
+    top: 5vh; /* Spacing from the top */
+    padding: 2vw; /* Padding inside the paragraph */
 }
