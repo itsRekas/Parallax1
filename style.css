@@ -100,9 +100,9 @@ section img {
     width: 40vw; /* 40% of viewport width */
     height: 60vh; /* 60% of viewport height */
     left: 30vw; /* Center horizontally */
-    top: 30vh; /* Center vertically */
+    top: 20vh; /* Center vertically */
     position: relative;
-    font-size: calc(1vh+1vw); /* Larger font size */
+    font-size: calc(0.8vh + 0.8vw); /* Larger font size */
     background: #040c577b; /* Semi-transparent dark blue background */
     border-radius: 3vw; /* Rounded corners */
 }
