@@ -102,7 +102,7 @@ section img {
     left: 30vw; /* Center horizontally */
     top: 30vh; /* Center vertically */
     position: relative;
-    font-size: larger; /* Larger font size */
+    font-size: calc(1vh+1vw); /* Larger font size */
     background: #040c577b; /* Semi-transparent dark blue background */
     border-radius: 3vw; /* Rounded corners */
 }
