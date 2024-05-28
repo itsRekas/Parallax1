@@ -2,19 +2,30 @@
 <html>
     <head>
         <title>Parallax Effect</title>
+        <!-- Link to the external CSS file for styling the page -->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Link to the external JavaScript file, loaded deferentially to avoid blocking HTML parsing -->
         <script defer src="script.js"></script>
     </head>
     <body>
+        <!-- Main section containing images and text for the parallax effect -->
         <section>
+            <!-- Background image, which will move slower to create depth effect -->
             <img src="./media/bg.jpg" id="bg">
+            <!-- Image of the moon, possibly a middle layer in the parallax effect -->
             <img src="./media/moon.png" id="moon">
+            <!-- Image of mountains, part of the layered parallax effect -->
             <img src="./media/mountain.png" id="mountain">
+            <!-- Image of a road, likely the foreground element in the parallax effect -->
             <img src="./media/road.png" id="road">
+            <!-- Heading text that may move independently for additional parallax effect -->
             <h2 id="text">Parallax Effect</h2>
-        </section>    
+        </section>
+        <!-- Information section providing context about the parallax effect -->
         <div class="info">
-            <p>The website parallax effect is a popular design technique that creates an engaging and immersive user experience by manipulating the movement of background and foreground elements as the user scrolls. In this effect, background images or layers move at a slower rate than the foreground content, producing an illusion of depth and motion. This can enhance the visual appeal of a website, drawing users in and encouraging them to explore further. Parallax scrolling is achieved using a combination of CSS and JavaScript, allowing designers to create dynamic, interactive web pages that capture attention and convey a sense of sophistication and modernity. By breaking the static nature of traditional web design, the parallax effect helps in creating memorable and visually stunning websites.</p>
+            <p>
+                The website parallax effect is a popular design technique that creates an engaging and immersive user experience by manipulating the movement of background and foreground elements as the user scrolls. In this effect, background images or layers move at a slower rate than the foreground content, producing an illusion of depth and motion. This can enhance the visual appeal of a website, drawing users in and encouraging them to explore further. Parallax scrolling is achieved using a combination of CSS and JavaScript, allowing designers to create dynamic, interactive web pages that capture attention and convey a sense of sophistication and modernity. By breaking the static nature of traditional web design, the parallax effect helps in creating memorable and visually stunning websites.
+            </p>
         </div>
     </body>
 </html>
