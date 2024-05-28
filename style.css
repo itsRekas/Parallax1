@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppinss:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Webkit scrollbar styling */
+::-webkit-scrollbar {
+    width: 0.5vw; /* Scrollbar width */
+    border-radius: 0.5px; /* Rounded corners */
+}
+
+/* Webkit scrollbar track styling */
+::-webkit-scrollbar-track {
+    background: rgba(15, 13, 31, 0.715); /* Track background color */
+}
+
+/* Webkit scrollbar thumb styling */
+::-webkit-scrollbar-thumb {
+    background: rgba(5, 5, 114, 0.76); /* Thumb background color */
+}
+
+/* Webkit scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(1, 1, 84); /* Hover background color */
+}
+body{
+    background: #010635fa;
+    min-height:1500px;
+}
+section{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+section:before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background:linear-gradient(to top, #010635db, transparent);
+    z-index:10;
+}
+section:after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#010635db;
+    z-index:10;
+    mix-blend-mode: color;
+}
+section img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    pointer-events:none;
+}
+#text{
+    position:relative;
+    color:#fff;
+    font-size:10em;
+    z-index:1;
+}
+#road{
+    z-index:2;
+}
+.info{
+    color:white;
+    width:40vw;
+    height:60vh;
+    left:30vw;
+    top:30vh;
+    position:relative;
+    font-size: larger;
+    background: #040c577b;
+    border-radius: 3vw;
+}
+.info p{
+    position:relative;
+    top:5vh;
+    padding:2vw;
+}
